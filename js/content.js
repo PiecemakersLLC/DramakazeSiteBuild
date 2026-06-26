@@ -1,21 +1,11 @@
 /* ============================================================
-   DRAMAKAZE — CONTENT  (auto-generated from DistroKid export)
+   DRAMAKAZE — CONTENT  (auto: DistroKid catalog x Spotify, matched by ISRC)
    The ONE file you edit. Roster, discography, studio build from here.
-
-   ARTIST HIERARCHY:
-     - "aliases": other names that roll up to this artist (releases under any
-       alias are credited to the parent automatically).
-     - "hidden": true  -> kept in data but NOT shown anywhere (their releases
-       drop from the discography). Use for artists you've moved on from.
-     - "signed": true  -> shows on the ARTISTS (active roster) page. The roster
-       is ONLY currently-signed artists — NOT the whole catalog. Add this flag
-       to the few artists with active deals; everyone else still appears in the
-       discography credits but not the roster. Currently: none signed.
-     Current: "Abel." is an alias of (hidden) "abeltriesherbest";
-              "Dane Christopher" is an alias of "Dane".
-
-   TO DO: add `spotify` link + `art` per release; name the untitled EP/albums;
-          add role/bio/photo/instagram/spotify per artist.
+     - "aliases": names that roll up to a parent artist.
+     - "hidden": true  -> kept in data, hidden everywhere (releases drop too).
+     - "signed": true  -> shows on ARTISTS (active roster) page. None signed yet.
+   Singles + albums whose tracklist is on Spotify are auto-filled (title, link,
+   cover). Multi-track releases not found on Spotify stay untitled w/ blank art.
    ============================================================ */
 
 window.DRAMAKAZE = {
@@ -164,9 +154,9 @@ window.DRAMAKAZE = {
       "id": "r-534081",
       "title": "Drop the Ball",
       "artist": "Mitchell Dolphin",
-      "year": 2025,
-      "art": "",
-      "spotify": "",
+      "year": 2026,
+      "art": "https://i.scdn.co/image/ab67616d0000b2730aeea33dcacaf236d0fb4ead",
+      "spotify": "https://open.spotify.com/album/3HyfMyPFa1smut151Zpj6i",
       "type": "single"
     },
     {
@@ -174,8 +164,8 @@ window.DRAMAKAZE = {
       "title": "Once Again",
       "artist": "Mitchell Dolphin",
       "year": 2025,
-      "art": "",
-      "spotify": "",
+      "art": "https://i.scdn.co/image/ab67616d0000b273d775d8f4880feb5e5f213ee2",
+      "spotify": "https://open.spotify.com/album/26uWKSSQ741ry2EtKsgeno",
       "type": "single"
     },
     {
@@ -183,8 +173,8 @@ window.DRAMAKAZE = {
       "title": "Runway",
       "artist": "The Artist Ren",
       "year": 2024,
-      "art": "",
-      "spotify": "",
+      "art": "https://i.scdn.co/image/ab67616d0000b27377b52630c11e7205aebaae30",
+      "spotify": "https://open.spotify.com/album/3VS81WgvgXM99ySFNtJgZY",
       "type": "single"
     },
     {
@@ -219,8 +209,8 @@ window.DRAMAKAZE = {
       "title": "porsche pastor",
       "artist": "abeltriesherbest",
       "year": 2023,
-      "art": "",
-      "spotify": "",
+      "art": "https://i.scdn.co/image/ab67616d0000b273c2c577a0c5aca340e5119f0d",
+      "spotify": "https://open.spotify.com/album/3w9cDHl5Sc9VE8GTMuEHVd",
       "type": "single"
     },
     {
@@ -296,7 +286,7 @@ window.DRAMAKAZE = {
       "year": 2022,
       "art": "https://i.scdn.co/image/ab67616d0000b2736f9613eaed67388b14a725f3",
       "spotify": "https://open.spotify.com/album/0eTAElV7s9dEAaNGVghAYA",
-      "type": "EP",
+      "type": "album",
       "tracks": [
         "Radio Nurse",
         "Not the Clones!",
@@ -317,11 +307,11 @@ window.DRAMAKAZE = {
     },
     {
       "id": "r-370327",
-      "title": "",
+      "title": "songs from the big dumpster",
       "artist": "Abel.",
       "year": 2022,
-      "art": "",
-      "spotify": "",
+      "art": "https://i.scdn.co/image/ab67616d0000b2735c1f8b94d999ceb590ed5c6b",
+      "spotify": "https://open.spotify.com/album/1Y2boLHJ17Yx7OD8igxTGk",
       "type": "album",
       "tracks": [
         "corduroy 12.16.19 master1",
@@ -342,8 +332,8 @@ window.DRAMAKAZE = {
       "title": "souled out",
       "artist": "xglypretty",
       "year": 2022,
-      "art": "",
-      "spotify": "",
+      "art": "https://i.scdn.co/image/ab67616d0000b27323acf255527add146368117f",
+      "spotify": "https://open.spotify.com/album/4Kt4cTs6Vcwr3AyFxPxVI8",
       "type": "single"
     },
     {
@@ -351,8 +341,8 @@ window.DRAMAKAZE = {
       "title": "hands off the kids",
       "artist": "xglypretty",
       "year": 2022,
-      "art": "",
-      "spotify": "",
+      "art": "https://i.scdn.co/image/ab67616d0000b2733f5132261919a4bf814f19ce",
+      "spotify": "https://open.spotify.com/album/2CjyhmKTL4Gn1IjP7fKxAX",
       "type": "single"
     },
     {
@@ -360,8 +350,8 @@ window.DRAMAKAZE = {
       "title": "shower boy",
       "artist": "Abel.",
       "year": 2022,
-      "art": "",
-      "spotify": "",
+      "art": "https://i.scdn.co/image/ab67616d0000b27388b39a44d412757fc4bbd5bd",
+      "spotify": "https://open.spotify.com/album/0pLa6IWRykFdlFV9czgIkf",
       "type": "single"
     },
     {
@@ -369,8 +359,8 @@ window.DRAMAKAZE = {
       "title": "bad christian, music",
       "artist": "xglypretty",
       "year": 2022,
-      "art": "",
-      "spotify": "",
+      "art": "https://i.scdn.co/image/ab67616d0000b2737dc18755f5ed4f93815b9400",
+      "spotify": "https://open.spotify.com/album/4ewFmSo8cm5kjRaHeO6KXl",
       "type": "single"
     },
     {
@@ -387,8 +377,8 @@ window.DRAMAKAZE = {
       "title": "Put er Down",
       "artist": "Stun Gun",
       "year": 2022,
-      "art": "",
-      "spotify": "",
+      "art": "https://i.scdn.co/image/ab67616d0000b27320e8ff0b47de7fa4601d58e8",
+      "spotify": "https://open.spotify.com/album/5ULL5lK6RUB6jcEtnpD9QK",
       "type": "single"
     },
     {
@@ -401,39 +391,12 @@ window.DRAMAKAZE = {
       "type": "single"
     },
     {
-      "id": "r-981476",
-      "title": "",
-      "artist": "Van Alden",
-      "year": 2022,
-      "art": "",
-      "spotify": "",
-      "type": "EP",
-      "tracks": [
-        "Stay",
-        "Foolish"
-      ]
-    },
-    {
-      "id": "r-673361",
-      "title": "",
-      "artist": "Abel.",
-      "year": 2022,
-      "art": "",
-      "spotify": "",
-      "type": "EP",
-      "tracks": [
-        "Earth Laughs",
-        "Consequences",
-        "My Fault"
-      ]
-    },
-    {
       "id": "r-999016",
       "title": "Can't Love You the Way I Hate You",
       "artist": "Abel.",
       "year": 2021,
-      "art": "",
-      "spotify": "",
+      "art": "https://i.scdn.co/image/ab67616d0000b273904fe424f01b15dec51216dc",
+      "spotify": "https://open.spotify.com/album/7Gp8zbyNj6r9lm4Bco7CgK",
       "type": "single"
     },
     {
@@ -441,8 +404,8 @@ window.DRAMAKAZE = {
       "title": "Hotter Than a Bullet",
       "artist": "Abel.",
       "year": 2021,
-      "art": "",
-      "spotify": "",
+      "art": "https://i.scdn.co/image/ab67616d0000b2733013af7ff308ade0e293d473",
+      "spotify": "https://open.spotify.com/album/3K2bT9PqZa4Hy1g2EFNei3",
       "type": "single"
     },
     {
@@ -450,8 +413,8 @@ window.DRAMAKAZE = {
       "title": "deathwish",
       "artist": "dane",
       "year": 2021,
-      "art": "",
-      "spotify": "",
+      "art": "https://i.scdn.co/image/ab67616d0000b2730eee63d03041e510a9b45a7c",
+      "spotify": "https://open.spotify.com/album/0oj0mN2K5bV2dOLnXLAKek",
       "type": "single"
     },
     {
@@ -486,8 +449,8 @@ window.DRAMAKAZE = {
       "title": "pay for me",
       "artist": "dane",
       "year": 2020,
-      "art": "",
-      "spotify": "",
+      "art": "https://i.scdn.co/image/ab67616d0000b273aaa38956a23a4f0a02ad7c1c",
+      "spotify": "https://open.spotify.com/album/5AuYapJdtw9JxXwiJp0riL",
       "type": "single"
     },
     {
@@ -501,11 +464,11 @@ window.DRAMAKAZE = {
     },
     {
       "id": "r-343383",
-      "title": "didn't know a thing (feat. HUSH)",
+      "title": "didn't know a thing",
       "artist": "Dane",
       "year": 2020,
-      "art": "",
-      "spotify": "",
+      "art": "https://i.scdn.co/image/ab67616d0000b2732861fda7313298217272a870",
+      "spotify": "https://open.spotify.com/album/33KA2R4DImrwqcoRhBZ7LL",
       "type": "single"
     },
     {
@@ -531,8 +494,8 @@ window.DRAMAKAZE = {
       "title": "better together",
       "artist": "Dane",
       "year": 2020,
-      "art": "",
-      "spotify": "",
+      "art": "https://i.scdn.co/image/ab67616d0000b273f069b271cbed3293a0aff366",
+      "spotify": "https://open.spotify.com/album/0ia6kmL4GZHrb0f1vbYvKF",
       "type": "single"
     },
     {
@@ -603,8 +566,8 @@ window.DRAMAKAZE = {
       "title": "something left to be said",
       "artist": "dane",
       "year": 2019,
-      "art": "",
-      "spotify": "",
+      "art": "https://i.scdn.co/image/ab67616d0000b273a2d690f0dcd8245fd70fdb36",
+      "spotify": "https://open.spotify.com/album/3z1powOtQWZ4y0DQN5kJCX",
       "type": "single"
     },
     {
@@ -622,11 +585,11 @@ window.DRAMAKAZE = {
     },
     {
       "id": "r-951417",
-      "title": "",
+      "title": "You're Not Who You Used to Be",
       "artist": "Van Alden",
       "year": 2019,
-      "art": "",
-      "spotify": "",
+      "art": "https://i.scdn.co/image/ab67616d0000b27397d87c1ada5e2a8fc23cccf0",
+      "spotify": "https://open.spotify.com/album/2bjB1EivO4B2BxSebH56X9",
       "type": "EP",
       "tracks": [
         "xo",
@@ -654,8 +617,8 @@ window.DRAMAKAZE = {
       "title": "listen!",
       "artist": "dane",
       "year": 2019,
-      "art": "",
-      "spotify": "",
+      "art": "https://i.scdn.co/image/ab67616d0000b273af7a3b16b62cef1ab2eb9f60",
+      "spotify": "https://open.spotify.com/album/2GZgTm1Ml7VoXh1DoaGu8N",
       "type": "single"
     },
     {
@@ -673,11 +636,11 @@ window.DRAMAKAZE = {
     },
     {
       "id": "r-672814",
-      "title": "",
+      "title": "nothing but forbidden fruit",
       "artist": "Abel.",
       "year": 2019,
-      "art": "",
-      "spotify": "",
+      "art": "https://i.scdn.co/image/ab67616d0000b2732d340545b86c929460f083b1",
+      "spotify": "https://open.spotify.com/album/3Pwe0BXl1qoFP0x1LrEpsa",
       "type": "album",
       "tracks": [
         "Earth Laughs",
@@ -780,12 +743,39 @@ window.DRAMAKAZE = {
       "type": "single"
     },
     {
+      "id": "r-981476",
+      "title": "You're Not Who You Used to Be",
+      "artist": "Van Alden",
+      "year": 2019,
+      "art": "https://i.scdn.co/image/ab67616d0000b27397d87c1ada5e2a8fc23cccf0",
+      "spotify": "https://open.spotify.com/album/2bjB1EivO4B2BxSebH56X9",
+      "type": "EP",
+      "tracks": [
+        "Stay",
+        "Foolish"
+      ]
+    },
+    {
+      "id": "r-673361",
+      "title": "nothing but forbidden fruit",
+      "artist": "Abel.",
+      "year": 2019,
+      "art": "https://i.scdn.co/image/ab67616d0000b2732d340545b86c929460f083b1",
+      "spotify": "https://open.spotify.com/album/3Pwe0BXl1qoFP0x1LrEpsa",
+      "type": "EP",
+      "tracks": [
+        "Earth Laughs",
+        "Consequences",
+        "My Fault"
+      ]
+    },
+    {
       "id": "r-341313",
-      "title": "",
+      "title": "Van Alden",
       "artist": "Van Alden",
       "year": 2018,
-      "art": "",
-      "spotify": "",
+      "art": "https://i.scdn.co/image/ab67616d0000b273397941e895a2303d54ff3a7c",
+      "spotify": "https://open.spotify.com/album/09KPdfjxZLq4FV33F0YC3k",
       "type": "album",
       "tracks": [
         "Boheme",
@@ -798,11 +788,11 @@ window.DRAMAKAZE = {
     },
     {
       "id": "r-249595",
-      "title": "Take Us Alive (feat. Lovergirl)",
+      "title": "Take Us Alive",
       "artist": "Hush",
       "year": 2018,
-      "art": "",
-      "spotify": "",
+      "art": "https://i.scdn.co/image/ab67616d0000b2738de649b39a5f9c295d8ac615",
+      "spotify": "https://open.spotify.com/album/3CPuskKv0eRSrxwrEiR0AH",
       "type": "single"
     },
     {
@@ -819,8 +809,8 @@ window.DRAMAKAZE = {
       "title": "Wasted (On Me)",
       "artist": "Hush",
       "year": 2018,
-      "art": "",
-      "spotify": "",
+      "art": "https://i.scdn.co/image/ab67616d0000b273b4a57275f824cfdf4912ffeb",
+      "spotify": "https://open.spotify.com/album/6af5YKV1oU2Ooyge5SmBQJ",
       "type": "single"
     },
     {
@@ -828,8 +818,8 @@ window.DRAMAKAZE = {
       "title": "D E E P R E S T",
       "artist": "Dane Christopher",
       "year": 2018,
-      "art": "",
-      "spotify": "",
+      "art": "https://i.scdn.co/image/ab67616d0000b273279b1bf8989cc61ccafee479",
+      "spotify": "https://open.spotify.com/album/0VGK9EJoU1Mr89BZEYh7Wc",
       "type": "single"
     },
     {
@@ -881,8 +871,8 @@ window.DRAMAKAZE = {
       "title": "My Fault",
       "artist": "Abel.",
       "year": 2018,
-      "art": "",
-      "spotify": "",
+      "art": "https://i.scdn.co/image/ab67616d0000b273061482376b3903a82dc1bdf5",
+      "spotify": "https://open.spotify.com/album/4qNGgUOPDbnSkevWl7CaVf",
       "type": "single"
     },
     {
@@ -896,411 +886,411 @@ window.DRAMAKAZE = {
     }
   ],
   "studio": [
-  {
-    "client": "Mitchell Dolphin",
-    "title": "Drop the Ball",
-    "role": "Produced",
-    "year": 2026,
-    "link": "https://open.spotify.com/album/3HyfMyPFa1smut151Zpj6i"
-  },
-  {
-    "client": "Harrison Borts",
-    "title": "spin",
-    "role": "Produced",
-    "year": 2025,
-    "link": "https://open.spotify.com/album/751Iml250lmKBFcFRpEXax"
-  },
-  {
-    "client": "Mitchell Dolphin",
-    "title": "Once Again",
-    "role": "Produced",
-    "year": 2025,
-    "link": "https://open.spotify.com/album/26uWKSSQ741ry2EtKsgeno"
-  },
-  {
-    "client": "The Artist Ren",
-    "title": "willow tree",
-    "role": "Produced",
-    "year": 2025,
-    "link": "https://open.spotify.com/album/7z8PDSmqebIj5QWiryGOa1"
-  },
-  {
-    "client": "The Artist Ren",
-    "title": "Runway",
-    "role": "Produced",
-    "year": 2024,
-    "link": "https://open.spotify.com/album/3VS81WgvgXM99ySFNtJgZY"
-  },
-  {
-    "client": "The Artist Ren",
-    "title": "cloudynight",
-    "role": "Produced",
-    "year": 2024,
-    "link": "https://open.spotify.com/album/3Yhto188w6UDqwMsEx9ZKe"
-  },
-  {
-    "client": "abeltriesherbest",
-    "title": "porsche pastor",
-    "role": "Produced",
-    "year": 2023,
-    "link": "https://open.spotify.com/album/3w9cDHl5Sc9VE8GTMuEHVd"
-  },
-  {
-    "client": "abeltriesherbest",
-    "title": "what if i were to tell you that... (audio movie)",
-    "role": "Produced",
-    "year": 2023,
-    "link": "https://open.spotify.com/album/6guHhGU1hKCtVkZneGM4A0"
-  },
-  {
-    "client": "Abel.",
-    "title": "shower boy",
-    "role": "Produced",
-    "year": 2022,
-    "link": "https://open.spotify.com/album/0pLa6IWRykFdlFV9czgIkf"
-  },
-  {
-    "client": "Abel.",
-    "title": "songs from the big dumpster",
-    "role": "Produced",
-    "year": 2022,
-    "link": "https://open.spotify.com/album/1Y2boLHJ17Yx7OD8igxTGk"
-  },
-  {
-    "client": "Sleeptalk",
-    "title": "Drown in a Rainbow (Deluxe Edition)",
-    "role": "Produced",
-    "year": 2022,
-    "link": "https://open.spotify.com/album/1EnECc1PMYmkAKTsY7Aovd"
-  },
-  {
-    "client": "Stun Gun",
-    "title": "Put er Down",
-    "role": "Produced",
-    "year": 2022,
-    "link": "https://open.spotify.com/album/5ULL5lK6RUB6jcEtnpD9QK"
-  },
-  {
-    "client": "xglypretty",
-    "title": "hands off the kids",
-    "role": "Produced",
-    "year": 2022,
-    "link": "https://open.spotify.com/album/2CjyhmKTL4Gn1IjP7fKxAX"
-  },
-  {
-    "client": "xglypretty",
-    "title": "souled out",
-    "role": "Produced",
-    "year": 2022,
-    "link": "https://open.spotify.com/album/4Kt4cTs6Vcwr3AyFxPxVI8"
-  },
-  {
-    "client": "xglypretty",
-    "title": "bad christian, music",
-    "role": "Produced",
-    "year": 2022,
-    "link": "https://open.spotify.com/album/4ewFmSo8cm5kjRaHeO6KXl"
-  },
-  {
-    "client": "Abel.",
-    "title": "Hotter Than a Bullet",
-    "role": "Produced",
-    "year": 2021,
-    "link": "https://open.spotify.com/album/3K2bT9PqZa4Hy1g2EFNei3"
-  },
-  {
-    "client": "Abel.",
-    "title": "Can't Love You the Way I Hate You",
-    "role": "Produced",
-    "year": 2021,
-    "link": "https://open.spotify.com/album/7Gp8zbyNj6r9lm4Bco7CgK"
-  },
-  {
-    "client": "dane",
-    "title": "deathwish",
-    "role": "Produced",
-    "year": 2021,
-    "link": "https://open.spotify.com/album/0oj0mN2K5bV2dOLnXLAKek"
-  },
-  {
-    "client": "dane",
-    "title": "better together",
-    "role": "Produced",
-    "year": 2020,
-    "link": "https://open.spotify.com/album/0ia6kmL4GZHrb0f1vbYvKF"
-  },
-  {
-    "client": "dane",
-    "title": "pay for me",
-    "role": "Produced",
-    "year": 2020,
-    "link": "https://open.spotify.com/album/5AuYapJdtw9JxXwiJp0riL"
-  },
-  {
-    "client": "dane",
-    "title": "didn't know a thing",
-    "role": "Produced",
-    "year": 2020,
-    "link": "https://open.spotify.com/album/33KA2R4DImrwqcoRhBZ7LL"
-  },
-  {
-    "client": "Deadskull",
-    "title": "66S",
-    "role": "Produced",
-    "year": 2020,
-    "link": "https://open.spotify.com/album/0lzDRpggefSXZny7ZTYgX2"
-  },
-  {
-    "client": "Deadskull",
-    "title": "DOOM",
-    "role": "Produced",
-    "year": 2020,
-    "link": "https://open.spotify.com/album/2gjrnL7yw5831DscjEgzsP"
-  },
-  {
-    "client": "Deadskull",
-    "title": "HO WAIT",
-    "role": "Produced",
-    "year": 2020,
-    "link": "https://open.spotify.com/album/2WoG5OR78r0HV27WBC12gg"
-  },
-  {
-    "client": "Abel.",
-    "title": "nothing but forbidden fruit",
-    "role": "Produced",
-    "year": 2019,
-    "link": "https://open.spotify.com/album/3Pwe0BXl1qoFP0x1LrEpsa"
-  },
-  {
-    "client": "dane",
-    "title": "something left to be said",
-    "role": "Produced",
-    "year": 2019,
-    "link": "https://open.spotify.com/album/3z1powOtQWZ4y0DQN5kJCX"
-  },
-  {
-    "client": "dane",
-    "title": "listen!",
-    "role": "Produced",
-    "year": 2019,
-    "link": "https://open.spotify.com/album/2GZgTm1Ml7VoXh1DoaGu8N"
-  },
-  {
-    "client": "HUSH",
-    "title": "Sugar",
-    "role": "Produced",
-    "year": 2019,
-    "link": "https://open.spotify.com/album/1b3OHmkSpM9f0iWmRyXeU6"
-  },
-  {
-    "client": "HUSH",
-    "title": "Get a Ride",
-    "role": "Produced",
-    "year": 2019,
-    "link": "https://open.spotify.com/album/3Hpacjh3VdYrYnSXZabzB8"
-  },
-  {
-    "client": "HUSH",
-    "title": "Cycle",
-    "role": "Produced",
-    "year": 2019,
-    "link": "https://open.spotify.com/album/1Tnqfnvv30MbFks1KFSS6x"
-  },
-  {
-    "client": "Pool Surfers",
-    "title": "Indulge",
-    "role": "Produced",
-    "year": 2019,
-    "link": "https://open.spotify.com/album/3h4HHPLA6RQGqtcZBYzq7d"
-  },
-  {
-    "client": "Pool Surfers",
-    "title": "5150",
-    "role": "Produced",
-    "year": 2019,
-    "link": "https://open.spotify.com/album/2rT6zc6qrumdhHDIDNWy94"
-  },
-  {
-    "client": "Pool Surfers",
-    "title": "Caught Up",
-    "role": "Produced",
-    "year": 2019,
-    "link": "https://open.spotify.com/album/1LuQxb56qFFbmzhSNWifeV"
-  },
-  {
-    "client": "Private Island",
-    "title": "5xx",
-    "role": "Produced",
-    "year": 2019,
-    "link": "https://open.spotify.com/album/6I1mB6BhE5VpSb9bzI0WYw"
-  },
-  {
-    "client": "Van Alden",
-    "title": "You're Not Who You Used to Be",
-    "role": "Produced",
-    "year": 2019,
-    "link": "https://open.spotify.com/album/2bjB1EivO4B2BxSebH56X9"
-  },
-  {
-    "client": "Abel.",
-    "title": "Consequences",
-    "role": "Produced",
-    "year": 2018,
-    "link": "https://open.spotify.com/album/7hMzWuAzvDil4jRf5KBBUQ"
-  },
-  {
-    "client": "Abel.",
-    "title": "Earth Laughs",
-    "role": "Produced",
-    "year": 2018,
-    "link": "https://open.spotify.com/album/7BS0kcTwspytsi47tYgIYZ"
-  },
-  {
-    "client": "Abel.",
-    "title": "My Fault",
-    "role": "Produced",
-    "year": 2018,
-    "link": "https://open.spotify.com/album/4qNGgUOPDbnSkevWl7CaVf"
-  },
-  {
-    "client": "dane christopher",
-    "title": "T H R O U G H",
-    "role": "Produced",
-    "year": 2018,
-    "link": "https://open.spotify.com/album/7AXHFb2Tmf8MvzEZApN9dG"
-  },
-  {
-    "client": "dane christopher",
-    "title": "D E E P R E S T",
-    "role": "Produced",
-    "year": 2018,
-    "link": "https://open.spotify.com/album/0VGK9EJoU1Mr89BZEYh7Wc"
-  },
-  {
-    "client": "dane christopher",
-    "title": "A N T I - S O C I A L B U T T E R F L Y",
-    "role": "Produced",
-    "year": 2018,
-    "link": "https://open.spotify.com/album/6HpkhRMkheba7mRDZhab8T"
-  },
-  {
-    "client": "HUSH",
-    "title": "Easy",
-    "role": "Produced",
-    "year": 2018,
-    "link": "https://open.spotify.com/album/0WThQLqsOsM4A15K2pxjOV"
-  },
-  {
-    "client": "HUSH",
-    "title": "Take Us Alive",
-    "role": "Produced",
-    "year": 2018,
-    "link": "https://open.spotify.com/album/3CPuskKv0eRSrxwrEiR0AH"
-  },
-  {
-    "client": "HUSH",
-    "title": "Ritual",
-    "role": "Produced",
-    "year": 2018,
-    "link": "https://open.spotify.com/album/2rYkOmGydEcB1AX6aFP1zL"
-  },
-  {
-    "client": "HUSH",
-    "title": "Wasted (On Me)",
-    "role": "Produced",
-    "year": 2018,
-    "link": "https://open.spotify.com/album/6af5YKV1oU2Ooyge5SmBQJ"
-  },
-  {
-    "client": "Pool Surfers",
-    "title": "Loose Life",
-    "role": "Produced",
-    "year": 2018,
-    "link": "https://open.spotify.com/album/4uH0iAeNE2JwLrTIiW3uMn"
-  },
-  {
-    "client": "Pool Surfers",
-    "title": "Lucid",
-    "role": "Produced",
-    "year": 2018,
-    "link": "https://open.spotify.com/album/1J7Cc2pAxCiVOQgTTpkJjd"
-  },
-  {
-    "client": "Sleeptalk",
-    "title": "I Hope You're Doing Well",
-    "role": "Produced",
-    "year": 2018,
-    "link": "https://open.spotify.com/album/0wJSQycGMeRxMqvIc84RLP"
-  },
-  {
-    "client": "Van Alden",
-    "title": "Boheme",
-    "role": "Produced",
-    "year": 2018,
-    "link": "https://open.spotify.com/album/0gpGB3VvAywV0L1rwXAz1Q"
-  },
-  {
-    "client": "Van Alden",
-    "title": "Otherside",
-    "role": "Produced",
-    "year": 2018,
-    "link": "https://open.spotify.com/album/5jMGZ0bL1VNlgl8YUPRgYG"
-  },
-  {
-    "client": "Van Alden",
-    "title": "Van Alden",
-    "role": "Produced",
-    "year": 2018,
-    "link": "https://open.spotify.com/album/09KPdfjxZLq4FV33F0YC3k"
-  },
-  {
-    "client": "HUSH",
-    "title": "Waves",
-    "role": "Produced",
-    "year": 2017,
-    "link": "https://open.spotify.com/album/7A5uQmLEeQd1s0I9iXjrWn"
-  },
-  {
-    "client": "My Native Tongue",
-    "title": "Lamplight",
-    "role": "Produced",
-    "year": 2017,
-    "link": "https://open.spotify.com/album/3BgvDkjlIYqksb2UGmZdh3"
-  },
-  {
-    "client": "Private Island",
-    "title": "Sunbreak",
-    "role": "Produced",
-    "year": 2016,
-    "link": "https://open.spotify.com/album/7vsK7LO5pg9tX3FdlrGPM5"
-  },
-  {
-    "client": "Private Island",
-    "title": "Drugs",
-    "role": "Produced",
-    "year": 2016,
-    "link": "https://open.spotify.com/album/5oD2h9PoO5CI4VU26HS22Z"
-  },
-  {
-    "client": "My Native Tongue",
-    "title": "Plane Kids",
-    "role": "Produced",
-    "year": 2015,
-    "link": "https://open.spotify.com/album/2yBlv5Ee5jo7Thebo3OBmW"
-  },
-  {
-    "client": "The Royal Sound",
-    "title": "Mother",
-    "role": "Produced",
-    "year": 2015,
-    "link": "https://open.spotify.com/album/2hhbQNiGUwiWBG7SMb0oAQ"
-  },
-  {
-    "client": "Private Island",
-    "title": "A Good Look",
-    "role": "Produced",
-    "year": 2014,
-    "link": "https://open.spotify.com/album/1k1SrYt2GsZQubvKilvMfi"
-  }
-]
+    {
+      "client": "Mitchell Dolphin",
+      "title": "Drop the Ball",
+      "role": "Produced",
+      "year": 2026,
+      "link": "https://open.spotify.com/album/3HyfMyPFa1smut151Zpj6i"
+    },
+    {
+      "client": "Harrison Borts",
+      "title": "spin",
+      "role": "Produced",
+      "year": 2025,
+      "link": "https://open.spotify.com/album/751Iml250lmKBFcFRpEXax"
+    },
+    {
+      "client": "Mitchell Dolphin",
+      "title": "Once Again",
+      "role": "Produced",
+      "year": 2025,
+      "link": "https://open.spotify.com/album/26uWKSSQ741ry2EtKsgeno"
+    },
+    {
+      "client": "The Artist Ren",
+      "title": "willow tree",
+      "role": "Produced",
+      "year": 2025,
+      "link": "https://open.spotify.com/album/7z8PDSmqebIj5QWiryGOa1"
+    },
+    {
+      "client": "The Artist Ren",
+      "title": "Runway",
+      "role": "Produced",
+      "year": 2024,
+      "link": "https://open.spotify.com/album/3VS81WgvgXM99ySFNtJgZY"
+    },
+    {
+      "client": "The Artist Ren",
+      "title": "cloudynight",
+      "role": "Produced",
+      "year": 2024,
+      "link": "https://open.spotify.com/album/3Yhto188w6UDqwMsEx9ZKe"
+    },
+    {
+      "client": "abeltriesherbest",
+      "title": "porsche pastor",
+      "role": "Produced",
+      "year": 2023,
+      "link": "https://open.spotify.com/album/3w9cDHl5Sc9VE8GTMuEHVd"
+    },
+    {
+      "client": "abeltriesherbest",
+      "title": "what if i were to tell you that... (audio movie)",
+      "role": "Produced",
+      "year": 2023,
+      "link": "https://open.spotify.com/album/6guHhGU1hKCtVkZneGM4A0"
+    },
+    {
+      "client": "Abel.",
+      "title": "shower boy",
+      "role": "Produced",
+      "year": 2022,
+      "link": "https://open.spotify.com/album/0pLa6IWRykFdlFV9czgIkf"
+    },
+    {
+      "client": "Abel.",
+      "title": "songs from the big dumpster",
+      "role": "Produced",
+      "year": 2022,
+      "link": "https://open.spotify.com/album/1Y2boLHJ17Yx7OD8igxTGk"
+    },
+    {
+      "client": "Sleeptalk",
+      "title": "Drown in a Rainbow (Deluxe Edition)",
+      "role": "Produced",
+      "year": 2022,
+      "link": "https://open.spotify.com/album/1EnECc1PMYmkAKTsY7Aovd"
+    },
+    {
+      "client": "Stun Gun",
+      "title": "Put er Down",
+      "role": "Produced",
+      "year": 2022,
+      "link": "https://open.spotify.com/album/5ULL5lK6RUB6jcEtnpD9QK"
+    },
+    {
+      "client": "xglypretty",
+      "title": "hands off the kids",
+      "role": "Produced",
+      "year": 2022,
+      "link": "https://open.spotify.com/album/2CjyhmKTL4Gn1IjP7fKxAX"
+    },
+    {
+      "client": "xglypretty",
+      "title": "souled out",
+      "role": "Produced",
+      "year": 2022,
+      "link": "https://open.spotify.com/album/4Kt4cTs6Vcwr3AyFxPxVI8"
+    },
+    {
+      "client": "xglypretty",
+      "title": "bad christian, music",
+      "role": "Produced",
+      "year": 2022,
+      "link": "https://open.spotify.com/album/4ewFmSo8cm5kjRaHeO6KXl"
+    },
+    {
+      "client": "Abel.",
+      "title": "Hotter Than a Bullet",
+      "role": "Produced",
+      "year": 2021,
+      "link": "https://open.spotify.com/album/3K2bT9PqZa4Hy1g2EFNei3"
+    },
+    {
+      "client": "Abel.",
+      "title": "Can't Love You the Way I Hate You",
+      "role": "Produced",
+      "year": 2021,
+      "link": "https://open.spotify.com/album/7Gp8zbyNj6r9lm4Bco7CgK"
+    },
+    {
+      "client": "dane",
+      "title": "deathwish",
+      "role": "Produced",
+      "year": 2021,
+      "link": "https://open.spotify.com/album/0oj0mN2K5bV2dOLnXLAKek"
+    },
+    {
+      "client": "dane",
+      "title": "better together",
+      "role": "Produced",
+      "year": 2020,
+      "link": "https://open.spotify.com/album/0ia6kmL4GZHrb0f1vbYvKF"
+    },
+    {
+      "client": "dane",
+      "title": "pay for me",
+      "role": "Produced",
+      "year": 2020,
+      "link": "https://open.spotify.com/album/5AuYapJdtw9JxXwiJp0riL"
+    },
+    {
+      "client": "dane",
+      "title": "didn't know a thing",
+      "role": "Produced",
+      "year": 2020,
+      "link": "https://open.spotify.com/album/33KA2R4DImrwqcoRhBZ7LL"
+    },
+    {
+      "client": "Deadskull",
+      "title": "66S",
+      "role": "Produced",
+      "year": 2020,
+      "link": "https://open.spotify.com/album/0lzDRpggefSXZny7ZTYgX2"
+    },
+    {
+      "client": "Deadskull",
+      "title": "DOOM",
+      "role": "Produced",
+      "year": 2020,
+      "link": "https://open.spotify.com/album/2gjrnL7yw5831DscjEgzsP"
+    },
+    {
+      "client": "Deadskull",
+      "title": "HO WAIT",
+      "role": "Produced",
+      "year": 2020,
+      "link": "https://open.spotify.com/album/2WoG5OR78r0HV27WBC12gg"
+    },
+    {
+      "client": "Abel.",
+      "title": "nothing but forbidden fruit",
+      "role": "Produced",
+      "year": 2019,
+      "link": "https://open.spotify.com/album/3Pwe0BXl1qoFP0x1LrEpsa"
+    },
+    {
+      "client": "dane",
+      "title": "something left to be said",
+      "role": "Produced",
+      "year": 2019,
+      "link": "https://open.spotify.com/album/3z1powOtQWZ4y0DQN5kJCX"
+    },
+    {
+      "client": "dane",
+      "title": "listen!",
+      "role": "Produced",
+      "year": 2019,
+      "link": "https://open.spotify.com/album/2GZgTm1Ml7VoXh1DoaGu8N"
+    },
+    {
+      "client": "HUSH",
+      "title": "Sugar",
+      "role": "Produced",
+      "year": 2019,
+      "link": "https://open.spotify.com/album/1b3OHmkSpM9f0iWmRyXeU6"
+    },
+    {
+      "client": "HUSH",
+      "title": "Get a Ride",
+      "role": "Produced",
+      "year": 2019,
+      "link": "https://open.spotify.com/album/3Hpacjh3VdYrYnSXZabzB8"
+    },
+    {
+      "client": "HUSH",
+      "title": "Cycle",
+      "role": "Produced",
+      "year": 2019,
+      "link": "https://open.spotify.com/album/1Tnqfnvv30MbFks1KFSS6x"
+    },
+    {
+      "client": "Pool Surfers",
+      "title": "Indulge",
+      "role": "Produced",
+      "year": 2019,
+      "link": "https://open.spotify.com/album/3h4HHPLA6RQGqtcZBYzq7d"
+    },
+    {
+      "client": "Pool Surfers",
+      "title": "5150",
+      "role": "Produced",
+      "year": 2019,
+      "link": "https://open.spotify.com/album/2rT6zc6qrumdhHDIDNWy94"
+    },
+    {
+      "client": "Pool Surfers",
+      "title": "Caught Up",
+      "role": "Produced",
+      "year": 2019,
+      "link": "https://open.spotify.com/album/1LuQxb56qFFbmzhSNWifeV"
+    },
+    {
+      "client": "Private Island",
+      "title": "5xx",
+      "role": "Produced",
+      "year": 2019,
+      "link": "https://open.spotify.com/album/6I1mB6BhE5VpSb9bzI0WYw"
+    },
+    {
+      "client": "Van Alden",
+      "title": "You're Not Who You Used to Be",
+      "role": "Produced",
+      "year": 2019,
+      "link": "https://open.spotify.com/album/2bjB1EivO4B2BxSebH56X9"
+    },
+    {
+      "client": "Abel.",
+      "title": "Consequences",
+      "role": "Produced",
+      "year": 2018,
+      "link": "https://open.spotify.com/album/7hMzWuAzvDil4jRf5KBBUQ"
+    },
+    {
+      "client": "Abel.",
+      "title": "Earth Laughs",
+      "role": "Produced",
+      "year": 2018,
+      "link": "https://open.spotify.com/album/7BS0kcTwspytsi47tYgIYZ"
+    },
+    {
+      "client": "Abel.",
+      "title": "My Fault",
+      "role": "Produced",
+      "year": 2018,
+      "link": "https://open.spotify.com/album/4qNGgUOPDbnSkevWl7CaVf"
+    },
+    {
+      "client": "dane christopher",
+      "title": "T H R O U G H",
+      "role": "Produced",
+      "year": 2018,
+      "link": "https://open.spotify.com/album/7AXHFb2Tmf8MvzEZApN9dG"
+    },
+    {
+      "client": "dane christopher",
+      "title": "D E E P R E S T",
+      "role": "Produced",
+      "year": 2018,
+      "link": "https://open.spotify.com/album/0VGK9EJoU1Mr89BZEYh7Wc"
+    },
+    {
+      "client": "dane christopher",
+      "title": "A N T I - S O C I A L B U T T E R F L Y",
+      "role": "Produced",
+      "year": 2018,
+      "link": "https://open.spotify.com/album/6HpkhRMkheba7mRDZhab8T"
+    },
+    {
+      "client": "HUSH",
+      "title": "Easy",
+      "role": "Produced",
+      "year": 2018,
+      "link": "https://open.spotify.com/album/0WThQLqsOsM4A15K2pxjOV"
+    },
+    {
+      "client": "HUSH",
+      "title": "Take Us Alive",
+      "role": "Produced",
+      "year": 2018,
+      "link": "https://open.spotify.com/album/3CPuskKv0eRSrxwrEiR0AH"
+    },
+    {
+      "client": "HUSH",
+      "title": "Ritual",
+      "role": "Produced",
+      "year": 2018,
+      "link": "https://open.spotify.com/album/2rYkOmGydEcB1AX6aFP1zL"
+    },
+    {
+      "client": "HUSH",
+      "title": "Wasted (On Me)",
+      "role": "Produced",
+      "year": 2018,
+      "link": "https://open.spotify.com/album/6af5YKV1oU2Ooyge5SmBQJ"
+    },
+    {
+      "client": "Pool Surfers",
+      "title": "Loose Life",
+      "role": "Produced",
+      "year": 2018,
+      "link": "https://open.spotify.com/album/4uH0iAeNE2JwLrTIiW3uMn"
+    },
+    {
+      "client": "Pool Surfers",
+      "title": "Lucid",
+      "role": "Produced",
+      "year": 2018,
+      "link": "https://open.spotify.com/album/1J7Cc2pAxCiVOQgTTpkJjd"
+    },
+    {
+      "client": "Sleeptalk",
+      "title": "I Hope You're Doing Well",
+      "role": "Produced",
+      "year": 2018,
+      "link": "https://open.spotify.com/album/0wJSQycGMeRxMqvIc84RLP"
+    },
+    {
+      "client": "Van Alden",
+      "title": "Boheme",
+      "role": "Produced",
+      "year": 2018,
+      "link": "https://open.spotify.com/album/0gpGB3VvAywV0L1rwXAz1Q"
+    },
+    {
+      "client": "Van Alden",
+      "title": "Otherside",
+      "role": "Produced",
+      "year": 2018,
+      "link": "https://open.spotify.com/album/5jMGZ0bL1VNlgl8YUPRgYG"
+    },
+    {
+      "client": "Van Alden",
+      "title": "Van Alden",
+      "role": "Produced",
+      "year": 2018,
+      "link": "https://open.spotify.com/album/09KPdfjxZLq4FV33F0YC3k"
+    },
+    {
+      "client": "HUSH",
+      "title": "Waves",
+      "role": "Produced",
+      "year": 2017,
+      "link": "https://open.spotify.com/album/7A5uQmLEeQd1s0I9iXjrWn"
+    },
+    {
+      "client": "My Native Tongue",
+      "title": "Lamplight",
+      "role": "Produced",
+      "year": 2017,
+      "link": "https://open.spotify.com/album/3BgvDkjlIYqksb2UGmZdh3"
+    },
+    {
+      "client": "Private Island",
+      "title": "Sunbreak",
+      "role": "Produced",
+      "year": 2016,
+      "link": "https://open.spotify.com/album/7vsK7LO5pg9tX3FdlrGPM5"
+    },
+    {
+      "client": "Private Island",
+      "title": "Drugs",
+      "role": "Produced",
+      "year": 2016,
+      "link": "https://open.spotify.com/album/5oD2h9PoO5CI4VU26HS22Z"
+    },
+    {
+      "client": "My Native Tongue",
+      "title": "Plane Kids",
+      "role": "Produced",
+      "year": 2015,
+      "link": "https://open.spotify.com/album/2yBlv5Ee5jo7Thebo3OBmW"
+    },
+    {
+      "client": "The Royal Sound",
+      "title": "Mother",
+      "role": "Produced",
+      "year": 2015,
+      "link": "https://open.spotify.com/album/2hhbQNiGUwiWBG7SMb0oAQ"
+    },
+    {
+      "client": "Private Island",
+      "title": "A Good Look",
+      "role": "Produced",
+      "year": 2014,
+      "link": "https://open.spotify.com/album/1k1SrYt2GsZQubvKilvMfi"
+    }
+  ]
 };
