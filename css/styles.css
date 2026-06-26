@@ -1,0 +1,422 @@
+/* ============================================================
+   DRAMAKAZE RECORDS — core stylesheet
+   Direction: light / editorial. Clean, minimal, logo-forward.
+   Brand red: #CA2030 (sampled from logo package)
+   ============================================================ */
+
+:root {
+  --red:    #CA2030;
+  --red-dk: #A2161F;
+  --ink:    #111111;
+  --paper:  #FCFBF9;   /* warm off-white */
+  --white:  #FFFFFF;
+  --line:   rgba(17, 17, 17, 0.14);   /* hairline boundary boxes */
+  --line-2: rgba(17, 17, 17, 0.30);
+  --muted:  rgba(17, 17, 17, 0.55);
+
+  --maxw: 1240px;
+  --gutter: clamp(20px, 5vw, 64px);
+  --hair: 1px;
+
+  /* Display: Clash Display — sharp, wide, blocky; echoes the angular logotype.
+     Body: Space Grotesk — techy, a little off-grid; deliberately NOT Inter.
+     Swap either by changing these two lines + the <link> in the HTML head. */
+  --display: "Clash Display", "Archivo", "Arial Narrow", sans-serif;
+  --body: "Space Grotesk", "Archivo", system-ui, sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--body);
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+
+/* ---- custom cursor (desktop, fine pointer only) ---- */
+@media (hover: hover) and (pointer: fine) {
+  body.has-mark-cursor,
+  body.has-mark-cursor a,
+  body.has-mark-cursor button { cursor: none; }
+
+  .cursor-dot {
+    position: fixed;
+    top: 0; left: 0;
+    width: 11px; height: 11px;
+    margin: -5.5px 0 0 -5.5px;
+    background: var(--red);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transition: opacity .2s ease;   /* pinned 1:1 to the cursor, no lag */
+    /* over red areas the dot multiplies to a darker red -> reads through;
+       over light it stays the brand red */
+    mix-blend-mode: multiply;
+  }
+}
+
+/* ============================================================
+   LAYOUT PRIMITIVES
+   ============================================================ */
+.wrap { max-width: var(--maxw); margin: 0 auto; padding-inline: var(--gutter); }
+
+/* thin boundary boxes — a recurring brand device */
+.boxed { border: var(--hair) solid var(--line); }
+.rule  { height: var(--hair); background: var(--line); border: 0; }
+
+.eyebrow {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: .72rem;
+  letter-spacing: .28em;
+  text-transform: uppercase;
+  color: var(--red);
+}
+.eyebrow.ink { color: var(--ink); }
+
+.section { padding-block: clamp(64px, 9vw, 130px); }
+.section__head { display: flex; align-items: baseline; gap: 1rem; justify-content: space-between; margin-bottom: 2.4rem; flex-wrap: wrap; }
+.section__title {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: clamp(1.9rem, 4.4vw, 3.1rem);
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  line-height: .98;
+}
+
+/* ============================================================
+   TOP BAR
+   ============================================================ */
+.topbar {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(252, 251, 249, 0.82);
+  backdrop-filter: saturate(140%) blur(10px);
+  border-bottom: var(--hair) solid var(--line);
+}
+.topbar__inner {
+  display: flex; align-items: center; justify-content: space-between;
+  height: 66px;
+}
+.topbar__brand { display: flex; align-items: center; gap: 12px; }
+.topbar__brand img { height: 26px; width: auto; }
+.nav { display: flex; align-items: center; gap: 6px; }
+.nav a {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: .8rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  padding: 9px 14px;
+  border: var(--hair) solid transparent;
+  transition: border-color .2s ease, color .2s ease;
+}
+.nav a:hover { border-color: var(--line-2); }
+.nav a.is-active { color: var(--red); }
+.nav a.cta { background: var(--ink); color: var(--paper); }
+.nav a.cta:hover { background: var(--red); border-color: var(--red); }
+
+.nav-toggle { display: none; background: none; border: var(--hair) solid var(--line-2); width: 42px; height: 38px; }
+.nav-toggle span { display:block; width: 18px; height: 2px; background: var(--ink); margin: 3px auto; }
+
+/* ============================================================
+   HERO — logo as the large primary feature
+   ============================================================ */
+.hero { position: relative; padding-top: clamp(48px, 8vw, 96px); padding-bottom: clamp(40px, 6vw, 80px); }
+.hero__frame { position: relative; border: var(--hair) solid var(--line); padding: clamp(28px, 5vw, 64px); }
+
+/* corner ticks on the hero frame — thin boundary-box motif */
+.hero__frame::before, .hero__frame::after {
+  content: ""; position: absolute; width: 14px; height: 14px;
+  border-color: var(--red); border-style: solid;
+}
+.hero__frame::before { top: -1px; left: -1px; border-width: 2px 0 0 2px; }
+.hero__frame::after  { bottom: -1px; right: -1px; border-width: 0 2px 2px 0; }
+
+.hero__logo {
+  width: min(100%, 980px);
+  margin: 0 auto;
+  display: block;
+}
+.hero__logo img { width: 100%; }
+.hero__meta {
+  margin-top: clamp(20px, 3vw, 34px);
+  display: flex; justify-content: space-between; align-items: flex-end;
+  gap: 1rem; flex-wrap: wrap;
+}
+.hero__tag {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: clamp(.95rem, 1.6vw, 1.2rem);
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  max-width: 32ch;
+}
+.hero__loc { font-size: .8rem; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); }
+
+/* spinning logomark Easter egg */
+.spinmark {
+  width: clamp(54px, 7vw, 78px); height: auto; cursor: pointer;
+  transition: transform .3s ease; flex-shrink: 0;
+}
+.spinmark.spin { animation: spin33 1.8s cubic-bezier(.2,.7,.2,1); }
+@keyframes spin33 { from { transform: rotate(0); } to { transform: rotate(720deg); } }
+
+/* ============================================================
+   LOGO-NAV — the homepage IS the wordmark.
+   Each letter is a hover-highlit door to a section.
+   ============================================================ */
+.logohero {
+  min-height: calc(100vh - 66px);
+  display: flex; flex-direction: column; justify-content: center;
+  padding-block: clamp(24px, 5vw, 60px);
+}
+.logohero .wrap { width: 100%; }
+
+.logo-stage { display: contents; }   /* desktop: no box; logo-nav lays out in .wrap */
+.logo-nav {
+  position: relative;
+  width: 116vw; max-width: none;      /* ultra-maximal — D & E kiss the screen edges */
+  margin-left: 50%;
+  transform: translateX(-50%);
+  aspect-ratio: 1836 / 612;           /* matches the wordmark PNG */
+  user-select: none;
+}
+.logo-nav img { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.logo-base { z-index: 1; }
+/* crisp, instant shard highlight — jagged clip-paths do the work */
+.logo-hi-wrap {
+  position: absolute; inset: 0; z-index: 2;
+  opacity: 0; transition: opacity .06s linear;
+  pointer-events: none;
+}
+.logo-hi { z-index: 2; }
+.logo-zone {                     /* hit area, clipped to the letter's true shape */
+  position: absolute; inset: 0;
+  z-index: 3; display: block;
+}
+.logo-zone--rec { z-index: 4; cursor: pointer; }  /* record sits above Z/E */
+/* no box — the letter's own ink flipping to black IS the highlight */
+.logo-zone[href="#"]:not(.logo-zone--rec) { cursor: default; }
+
+.logo-caption {
+  text-align: center;
+  margin-top: clamp(20px, 3.5vw, 44px);
+  min-height: 2.2em;
+}
+.logo-caption .lead {
+  font-family: var(--display); font-weight: 700; text-transform: uppercase;
+  font-size: clamp(1.4rem, 4vw, 2.8rem); letter-spacing: .01em; line-height: 1;
+  color: var(--ink);
+}
+.logo-caption .lead .ar { color: var(--red); }
+.logo-caption .hint {
+  font-family: var(--body); font-size: .8rem; letter-spacing: .22em;
+  text-transform: uppercase; color: var(--muted);
+}
+.logo-caption .key {
+  display: inline-block; min-width: 1.4em; margin-right: .4em;
+  color: var(--red); font-weight: 700;
+}
+
+/* mobile fallback: list the doors plainly */
+.logo-mnav { display: none; }
+.logo-mnav a {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 16px 4px; border-bottom: 1px solid var(--line);
+  font-family: var(--display); font-weight: 700; text-transform: uppercase; letter-spacing: .06em;
+}
+.logo-mnav a .k { color: var(--red); margin-right: 14px; }
+.logo-mnav a[href="#"] { color: var(--muted); }
+
+/* ============================================================
+   STRIP / MARQUEE
+   ============================================================ */
+.strip { border-block: var(--hair) solid var(--line); overflow: hidden; }
+.strip__track {
+  display: flex; gap: 3rem; padding-block: 14px; white-space: nowrap;
+  font-family: var(--display); font-weight: 700; text-transform: uppercase;
+  letter-spacing: .14em; font-size: .82rem;
+  animation: marquee 28s linear infinite;
+}
+.strip__track span { color: var(--muted); }
+.strip__track b { color: var(--red); }
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* ============================================================
+   ROSTER GRID
+   ============================================================ */
+.grid { display: grid; gap: var(--hair); background: var(--line); border: var(--hair) solid var(--line); }
+.grid--roster { grid-template-columns: repeat(3, 1fr); }
+.card {
+  background: var(--paper); padding: clamp(20px, 2.4vw, 30px);
+  min-height: 230px; display: flex; flex-direction: column; justify-content: space-between;
+  transition: background .2s ease, color .2s ease;
+}
+.card:hover { background: var(--ink); color: var(--paper); }
+.card:hover .card__no, .card:hover .card__role { color: rgba(252,251,249,.6); }
+.card__no { font-family: var(--display); font-weight: 700; font-size: .78rem; letter-spacing: .14em; color: var(--muted); }
+.card__name { font-family: var(--display); font-weight: 800; font-size: clamp(1.4rem, 2.6vw, 2rem); text-transform: uppercase; line-height: 1; margin-top: auto; }
+.card__role { font-size: .82rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-top: 8px; }
+.placeholder-note { color: var(--red); font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; margin-top: 6px; }
+
+/* ============================================================
+   RELEASES
+   ============================================================ */
+.releases { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(14px, 1.6vw, 22px); }
+.release__art {
+  aspect-ratio: 1; border: var(--hair) solid var(--line);
+  display: grid; place-items: center; background: var(--white);
+  position: relative; overflow: hidden;
+}
+.release__art img { width: 46%; opacity: .5; }
+.release__art::after {
+  content: "ART TBD"; position: absolute; bottom: 10px; right: 10px;
+  font-family: var(--display); font-size: .6rem; letter-spacing: .18em; color: var(--muted);
+}
+.release__meta { margin-top: 12px; }
+.release__title { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 1rem; line-height: 1; }
+.release__sub { font-size: .8rem; color: var(--muted); margin-top: 5px; }
+
+/* ============================================================
+   STUDIO CALLOUT
+   ============================================================ */
+.callout { display: grid; grid-template-columns: 1.1fr .9fr; border: var(--hair) solid var(--line); }
+.callout__body { padding: clamp(28px, 4vw, 56px); }
+.callout__body p { color: var(--muted); max-width: 46ch; margin-top: 1rem; }
+.callout__side {
+  border-left: var(--hair) solid var(--line);
+  background: var(--ink); color: var(--paper);
+  display: grid; place-items: center; padding: 40px;
+}
+.callout__side img { width: min(60%, 200px); }
+.btn {
+  display: inline-flex; align-items: center; gap: 10px; margin-top: 1.8rem;
+  font-family: var(--display); font-weight: 700; text-transform: uppercase;
+  letter-spacing: .12em; font-size: .82rem;
+  border: var(--hair) solid var(--ink); padding: 13px 22px;
+  transition: background .2s ease, color .2s ease;
+}
+.btn:hover { background: var(--red); border-color: var(--red); color: var(--white); }
+.btn--ghost { border-color: var(--paper); color: var(--paper); }
+.btn--ghost:hover { background: var(--paper); color: var(--ink); }
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.footer { border-top: var(--hair) solid var(--line); padding-block: clamp(48px, 6vw, 80px); }
+.footer__grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 2rem; }
+.footer__logo { width: 240px; }
+.footer h4 { font-family: var(--display); font-weight: 700; font-size: .74rem; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); margin-bottom: 1rem; }
+.footer a { display: block; padding: 4px 0; font-size: .92rem; }
+.footer a:hover { color: var(--red); }
+.footer__addr { font-size: .9rem; color: var(--muted); line-height: 1.7; }
+.footer__bottom { display: flex; justify-content: space-between; margin-top: 3rem; padding-top: 1.4rem; border-top: var(--hair) solid var(--line); font-size: .76rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); flex-wrap: wrap; gap: 1rem; }
+
+/* hidden easter-egg note */
+.egg { position: fixed; inset: auto auto 22px 22px; z-index: 200; background: var(--ink); color: var(--paper); font-family: var(--display); font-weight: 700; font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; padding: 12px 16px; border-left: 3px solid var(--red); opacity: 0; transform: translateY(12px); pointer-events: none; transition: opacity .3s ease, transform .3s ease; }
+.egg.show { opacity: 1; transform: translateY(0); }
+
+/* ============================================================
+   DATA-DRIVEN CONTENT — disposable photos, cards, credits
+   ============================================================ */
+.ph-frame { position: relative; border: 1px solid var(--line); background: var(--white); overflow: hidden; }
+.ph-frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.ph-empty { display: grid; place-items: center; }
+.ph-empty img { width: 40%; opacity: .45; }
+.ph-empty .placeholder-note { position: absolute; bottom: 9px; left: 0; right: 0; text-align: center; }
+/* the classic disposable date-stamp */
+.ph-stamp {
+  position: absolute; right: 8px; bottom: 6px;
+  font-family: var(--display); font-weight: 700; font-size: .82rem; letter-spacing: .04em;
+  color: #FF8A1F; text-shadow: 0 0 3px rgba(0,0,0,.45);
+}
+.is-example { opacity: .9; }
+.is-example .ph-frame { border-style: dashed; }
+
+.meta-links { display: flex; gap: 14px; margin-top: 11px; flex-wrap: wrap; }
+.meta-links a { font-family: var(--display); font-weight: 700; text-transform: uppercase; font-size: .72rem; letter-spacing: .1em; }
+.meta-links a:hover { color: var(--red); }
+.tag { display: inline-block; font-family: var(--display); font-weight: 700; text-transform: uppercase; font-size: .6rem; letter-spacing: .16em; color: var(--red); border: 1px solid var(--line); padding: 2px 7px; margin-bottom: 9px; }
+.player { margin-top: 14px; }
+.spotify-embed { width: 100%; display: block; }
+.release__title.untitled { color: var(--muted); }
+.tracklist { margin: 10px 0 0; padding-left: 1.15em; color: var(--muted); font-size: .8rem; line-height: 1.5; }
+.tracklist li { margin: 1px 0; }
+
+/* artist card (roster) */
+.art-card { background: var(--paper); border: 0; min-height: 0; padding: 0; display: block; }
+.art-card__body { padding: clamp(14px, 1.6vw, 20px); }
+.art-card .card__name { margin-top: 6px; }
+.art-card:hover { background: var(--paper); color: inherit; }
+.art-card:hover .ph-frame { border-color: var(--red); }
+.art-card:hover .card__name { color: var(--red); }
+
+/* discography grid with players */
+.releases--disc { grid-template-columns: repeat(3, 1fr); }
+
+/* artist detail rows */
+.artist-row { display: grid; grid-template-columns: 300px 1fr; gap: clamp(20px, 3vw, 44px); padding-block: clamp(26px, 3.5vw, 48px); border-top: 1px solid var(--line); align-items: start; }
+.artist-row:first-child { border-top: 0; }
+.artist-row__name { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: clamp(1.7rem, 3.4vw, 2.6rem); line-height: .98; }
+.artist-row__body p { color: var(--muted); max-width: 62ch; margin: .9rem 0; }
+
+/* studio credits list */
+.credit-row { display: flex; justify-content: space-between; align-items: baseline; gap: 1.2rem; padding: 15px 0; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+.credit-row .who { font-family: var(--display); font-weight: 700; text-transform: uppercase; letter-spacing: .03em; }
+.credit-row .who small { display: block; font-family: var(--body); font-weight: 400; text-transform: none; letter-spacing: 0; color: var(--muted); margin-top: 2px; }
+.credit-row .what { color: var(--red); font-family: var(--display); font-weight: 700; text-transform: uppercase; font-size: .76rem; letter-spacing: .12em; white-space: nowrap; }
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 900px) {
+  .nav { display: none; }
+  .nav-toggle { display: block; }
+  /* MOBILE: the whole wordmark turns 90° — scroll D -> E, each letter still
+     tappable at maximal size. Wild on purpose, not the most UI-friendly. */
+  .logohero { min-height: auto; padding-block: 0; }
+  .logo-caption { display: none; }
+  .logo-mnav { display: none; }
+  .logo-stage {
+    display: block; position: relative;
+    width: 100vw; height: 475vw;          /* scroll length of the rotated word */
+    margin-left: 50%; transform: translateX(-50%);
+    overflow: hidden;
+  }
+  .logo-nav {
+    position: absolute; top: 0; left: 0;
+    width: 487.7vw; height: 162.6vw;      /* 3:1; rotated -> fills the screen width */
+    max-width: none; margin: 0; aspect-ratio: auto;
+    transform-origin: 0 0;
+    transform: translate(119.2vw, 0) rotate(90deg);
+  }
+  .topbar.open .nav {
+    display: flex; flex-direction: column; align-items: stretch;
+    position: absolute; top: 66px; left: 0; right: 0;
+    background: var(--paper); border-bottom: var(--hair) solid var(--line);
+    padding: 10px var(--gutter) 18px;
+  }
+  .topbar.open .nav a { border: 0; border-bottom: var(--hair) solid var(--line); padding: 14px 0; }
+  .grid--roster { grid-template-columns: repeat(2, 1fr); }
+  .releases { grid-template-columns: repeat(2, 1fr); }
+  .releases--disc { grid-template-columns: repeat(2, 1fr); }
+  .artist-row { grid-template-columns: 1fr; }
+  .callout { grid-template-columns: 1fr; }
+  .callout__side { border-left: 0; border-top: var(--hair) solid var(--line); }
+  .footer__grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 560px) {
+  .grid--roster { grid-template-columns: 1fr; }
+  .hero__meta { flex-direction: column; align-items: flex-start; }
+  .footer__grid { grid-template-columns: 1fr; }
+}

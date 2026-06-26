@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dramakaze Records</title>
+<meta name="description" content="Dramakaze Records — independent label and recording studio. Yucca Valley, California." />
+<link rel="icon" type="image/png" href="assets/logo/logomark-red.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Archivo:wght@600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- custom cursor overlay (desktop) -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+
+  <!-- ===================== TOP BAR ===================== -->
+  <header class="topbar" id="topbar">
+    <div class="wrap topbar__inner">
+      <a class="topbar__brand" href="index.html" aria-label="Dramakaze Records home">
+        <img src="assets/logo/logotype-red.png" alt="Dramakaze Records" />
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="discography.html">Discography</a>
+        <a href="studio.html">Studio</a>
+        <a href="artists.html">Artists</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== LOGO-NAV HERO =====================
+       The wordmark IS the homepage. Each letter is a door.
+       Zones + highlight overlays are generated in js/main.js
+       from the LETTERS config, so re-mapping a letter = one line. -->
+  <section class="logohero">
+    <div class="wrap">
+      <div class="eyebrow" style="text-align:center; margin-bottom:clamp(16px,2.5vw,28px)">Independent Label &amp; Studio — Yucca Valley, CA</div>
+
+      <div class="logo-stage">
+        <div class="logo-nav" id="logoNav" role="navigation" aria-label="Dramakaze letters">
+          <img class="logo-base" src="assets/logo/logotype-red.png" alt="Dramakaze Records" />
+          <!-- highlight overlays + letter hit-zones injected here -->
+        </div>
+      </div>
+
+      <div class="logo-caption" id="logoCaption">
+        <span class="hint">Move across the letters &mdash; each one opens a room</span>
+      </div>
+
+      <!-- touch / no-hover fallback -->
+      <nav class="logo-mnav" aria-label="Sections">
+        <a href="discography.html"><span><span class="k">D</span>Discography</span><span>&#8599;</span></a>
+        <a href="studio.html"><span><span class="k">R</span>Recording Studio</span><span>&#8599;</span></a>
+        <a href="artists.html"><span><span class="k">A</span>Artists</span><span>&#8599;</span></a>
+        <a href="services.html"><span><span class="k">M</span>Mixing &amp; Mastering</span><span>&#8599;</span></a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ===================== ROSTER ===================== -->
+  <section class="section" id="roster">
+    <div class="wrap">
+      <div class="section__head">
+        <div>
+          <div class="eyebrow ink">01 — Roster</div>
+          <h2 class="section__title">Artists</h2>
+        </div>
+        <p class="hero__loc">From js/content.js</p>
+      </div>
+      <div class="grid grid--roster" data-render="roster"></div>
+    </div>
+  </section>
+
+  <!-- ===================== RELEASES ===================== -->
+  <section class="section" id="releases" style="padding-top:0">
+    <div class="wrap">
+      <div class="section__head">
+        <div>
+          <div class="eyebrow ink">02 — Catalog</div>
+          <h2 class="section__title">Latest Releases</h2>
+        </div>
+        <p class="hero__loc"><a href="discography.html">Full discography &#8599;</a></p>
+      </div>
+      <div class="releases" data-render="releases"></div>
+    </div>
+  </section>
+
+  <!-- ===================== STUDIO CALLOUT ===================== -->
+  <section class="section" id="studio" style="padding-top:0">
+    <div class="wrap">
+      <div class="callout">
+        <div class="callout__body">
+          <div class="eyebrow">03 — Dramakaze Studio</div>
+          <h2 class="section__title" style="margin-top:.6rem">Recorded<br>in the desert.</h2>
+          <p>The Dramakaze recording studio in Yucca Valley — tracking, production, and mixing for the label and for outside artists. Services, rates, and booking live on the Studio page.</p>
+          <a class="btn" href="studio.html">Enter the Studio &#8599;</a>
+        </div>
+        <div class="callout__side">
+          <img src="assets/logo/logomark-red.png" alt="Dramakaze Studio" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== NEWS ===================== -->
+  <section class="section" id="news" style="padding-top:0">
+    <div class="wrap">
+      <div class="section__head">
+        <div>
+          <div class="eyebrow ink">04 — News</div>
+          <h2 class="section__title">Press &amp; Updates</h2>
+        </div>
+        <p class="hero__loc">[ posts pending ]</p>
+      </div>
+      <div class="boxed" style="padding:clamp(28px,4vw,52px); text-align:center; color:var(--muted)">
+        <p style="font-family:var(--display); letter-spacing:.1em; text-transform:uppercase; font-size:.9rem">Announcements, releases and press will land here.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER / CONTACT ===================== -->
+  <footer class="footer" id="contact">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div>
+          <img class="footer__logo" src="assets/logo/logotype-red.png" alt="Dramakaze Records" />
+          <p class="footer__addr" style="margin-top:1.2rem">
+            Dramakaze Records &amp; Studio<br>
+            Yucca Valley, California
+          </p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <a href="index.html">Records</a>
+          <a href="studio.html">Studio</a>
+          <a href="#roster">Roster</a>
+          <a href="#releases">Releases</a>
+          <a href="#news">News</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="mailto:bob@dramakaze.com">bob@dramakaze.com &#8599;</a>
+          <a href="#" data-link="instagram">Instagram &#8599;</a>
+          <span class="placeholder-note">Social links pending</span>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Dramakaze Records</span>
+        <span>Yucca Valley, CA</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="egg" id="egg">&#9210; Needle dropped.</div>
+
+  <script src="js/content.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
