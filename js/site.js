@@ -38,6 +38,14 @@
       'encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe>';
   }
 
+  /* ---- Bandcamp: embed player from an album id ---- */
+  function bandcamp(id) {
+    if (!id) return "";
+    return '<iframe class="bandcamp-embed" style="border:0;width:100%;height:120px" loading="lazy" seamless ' +
+      'src="https://bandcamp.com/EmbeddedPlayer/album=' + esc(id) +
+      '/size=large/bgcol=fcfbf9/linkcol=ca2030/tracklist=false/artwork=none/transparent=true/"></iframe>';
+  }
+
   /* ---- framed photo (disposable look) or a marked placeholder ---- */
   function frame(src, alt, ratio, stamp) {
     var s = stamp ? '<span class="ph-stamp">' + esc(stamp) + "</span>" : "";
@@ -81,7 +89,8 @@
       '<div class="release__title' + (r.title ? "" : " untitled") + '">' + title + "</div>" +
       '<div class="release__sub">' + esc(disp(r.artist)) + (r.year ? " — " + esc(r.year) : "") + "</div>" +
       tl +
-      (withPlayer && r.spotify ? '<div class="player">' + spotify(r.spotify, true) + "</div>" : "") +
+      (withPlayer && r.spotify ? '<div class="player">' + spotify(r.spotify, true) + "</div>"
+        : (withPlayer && r.bandcamp ? '<div class="player">' + bandcamp(r.bandcamp) + "</div>" : "")) +
       "</div></article>";
   }
   function releases(el) {   // homepage: latest few only
