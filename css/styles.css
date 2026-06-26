@@ -398,7 +398,7 @@ a { color: inherit; text-decoration: none; }
     width: 487.7vw; height: 162.6vw;      /* 3:1; rotated -> fills the screen width */
     max-width: none; margin: 0; aspect-ratio: auto;
     transform-origin: 0 0;
-    transform: translate(119.2vw, 0) rotate(90deg);
+    transform: translate(133vw, 0) rotate(90deg);   /* centered on the DRAMAKAZE caps */
   }
   .topbar.open .nav {
     display: flex; flex-direction: column; align-items: stretch;
