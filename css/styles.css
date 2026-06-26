@@ -388,17 +388,17 @@ a { color: inherit; text-decoration: none; }
   .logo-caption { display: none; }
   .logo-mnav { display: none; }
   .logo-stage {
-    display: grid; place-items: center;   /* auto-centers the rotated word */
+    display: block; position: relative;
     width: 100vw; height: 500vw;          /* scroll length of the rotated word */
     margin-left: 50%; transform: translateX(-50%);
     overflow: hidden;
   }
   .logo-nav {
-    position: relative; top: auto; left: auto;
+    position: absolute; top: 50%; left: 50%;   /* element centre -> screen centre */
     width: 487.7vw; height: 162.6vw;      /* 3:1; rotated -> fills the screen width */
     max-width: none; margin: 0; aspect-ratio: auto;
     transform-origin: center center;
-    transform: rotate(90deg);             /* rotate about its own centre -> centered */
+    transform: translate(-50%, -50%) rotate(90deg);
   }
   .topbar.open .nav {
     display: flex; flex-direction: column; align-items: stretch;
