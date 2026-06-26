@@ -180,28 +180,6 @@ window.DRAMAKAZE = {
       "type": "single"
     },
     {
-      "id": "r-646107",
-      "title": "Runway",
-      "artist": "The Artist Ren",
-      "year": 2024,
-      "art": "https://i.scdn.co/image/ab67616d0000b27377b52630c11e7205aebaae30",
-      "spotify": "https://open.spotify.com/album/3VS81WgvgXM99ySFNtJgZY",
-      "type": "single"
-    },
-    {
-      "id": "r-467214",
-      "title": "cloudynight",
-      "artist": "The Artist Ren",
-      "year": 2024,
-      "art": "https://i.scdn.co/image/ab67616d0000b273fe9bbad7afcce02d6d972080",
-      "spotify": "https://open.spotify.com/album/3Yhto188w6UDqwMsEx9ZKe",
-      "type": "EP",
-      "tracks": [
-        "cloudynight",
-        "runway"
-      ]
-    },
-    {
       "id": "r-364791",
       "title": "willow tree",
       "artist": "The Artist Ren",
@@ -287,32 +265,6 @@ window.DRAMAKAZE = {
       ]
     },
     {
-      "id": "r-323687",
-      "title": "Under the Bleachers",
-      "artist": "The Artist Ren",
-      "year": 2022,
-      "art": "https://i.scdn.co/image/ab67616d0000b2736f9613eaed67388b14a725f3",
-      "spotify": "https://open.spotify.com/album/0eTAElV7s9dEAaNGVghAYA",
-      "type": "album",
-      "tracks": [
-        "Radio Nurse",
-        "Not the Clones!",
-        "The Circus",
-        ".mp3",
-        "meowmeow",
-        "sleepstuff"
-      ]
-    },
-    {
-      "id": "r-458084",
-      "title": "sleepstuff",
-      "artist": "The Artist Ren",
-      "year": 2022,
-      "art": "https://i.scdn.co/image/ab67616d0000b27311bd5c112f2dfa09464ff123",
-      "spotify": "https://open.spotify.com/track/7IzDxIuFx3pnRIcm4gJWu7",
-      "type": "single"
-    },
-    {
       "id": "r-370327",
       "title": "songs from the big dumpster",
       "artist": "Abel.",
@@ -335,39 +287,12 @@ window.DRAMAKAZE = {
       ]
     },
     {
-      "id": "r-866412",
-      "title": "souled out",
-      "artist": "xglypretty",
-      "year": 2022,
-      "art": "https://i.scdn.co/image/ab67616d0000b27323acf255527add146368117f",
-      "spotify": "https://open.spotify.com/album/4Kt4cTs6Vcwr3AyFxPxVI8",
-      "type": "single"
-    },
-    {
-      "id": "r-571770",
-      "title": "hands off the kids",
-      "artist": "xglypretty",
-      "year": 2022,
-      "art": "https://i.scdn.co/image/ab67616d0000b2733f5132261919a4bf814f19ce",
-      "spotify": "https://open.spotify.com/album/2CjyhmKTL4Gn1IjP7fKxAX",
-      "type": "single"
-    },
-    {
       "id": "r-640527",
       "title": "shower boy",
       "artist": "Abel.",
       "year": 2022,
       "art": "https://i.scdn.co/image/ab67616d0000b27388b39a44d412757fc4bbd5bd",
       "spotify": "https://open.spotify.com/album/0pLa6IWRykFdlFV9czgIkf",
-      "type": "single"
-    },
-    {
-      "id": "r-866665",
-      "title": "bad christian, music",
-      "artist": "xglypretty",
-      "year": 2022,
-      "art": "https://i.scdn.co/image/ab67616d0000b2737dc18755f5ed4f93815b9400",
-      "spotify": "https://open.spotify.com/album/4ewFmSo8cm5kjRaHeO6KXl",
       "type": "single"
     },
     {
@@ -507,11 +432,11 @@ window.DRAMAKAZE = {
     },
     {
       "id": "r-180303",
-      "title": "Hush Puppies",
+      "title": "K-Hole",
       "artist": "Hush",
       "year": 2020,
-      "art": "https://i.scdn.co/image/ab67616d0000b27309020f70cf1e483b2f103365",
-      "spotify": "https://open.spotify.com/album/0gRQptCE31MNxLxIO9wBf8",
+      "art": "https://i.scdn.co/image/ab67616d0000b273e9068494f4729b4c589fc3da",
+      "spotify": "https://open.spotify.com/album/09LjTWLaCSvlW2yLAx4EAy",
       "type": "EP",
       "tracks": [
         "Pulled Up On",
@@ -598,30 +523,12 @@ window.DRAMAKAZE = {
       ]
     },
     {
-      "id": "r-032241",
-      "title": "Stay",
-      "artist": "Van Alden",
-      "year": 2019,
-      "art": "https://i.scdn.co/image/ab67616d0000b27397d87c1ada5e2a8fc23cccf0",
-      "spotify": "https://open.spotify.com/album/2bjB1EivO4B2BxSebH56X9",
-      "type": "single"
-    },
-    {
       "id": "r-573598",
       "title": "listen!",
       "artist": "dane",
       "year": 2019,
       "art": "https://i.scdn.co/image/ab67616d0000b273af7a3b16b62cef1ab2eb9f60",
       "spotify": "https://open.spotify.com/album/2GZgTm1Ml7VoXh1DoaGu8N",
-      "type": "single"
-    },
-    {
-      "id": "r-200716",
-      "title": "Foolish",
-      "artist": "Van Alden",
-      "year": 2019,
-      "art": "https://i.scdn.co/image/ab67616d0000b27397d87c1ada5e2a8fc23cccf0",
-      "spotify": "https://open.spotify.com/album/2bjB1EivO4B2BxSebH56X9",
       "type": "single"
     },
     {
@@ -695,15 +602,6 @@ window.DRAMAKAZE = {
       "type": "single"
     },
     {
-      "id": "r-174413",
-      "title": "Get a Ride",
-      "artist": "Hush",
-      "year": 2019,
-      "art": "https://i.scdn.co/image/ab67616d0000b2730092719c02baa44552c28d7e",
-      "spotify": "https://open.spotify.com/album/3Hpacjh3VdYrYnSXZabzB8",
-      "type": "single"
-    },
-    {
       "id": "r-188281",
       "title": "Get a Ride",
       "artist": "Hush",
@@ -711,19 +609,6 @@ window.DRAMAKAZE = {
       "art": "https://i.scdn.co/image/ab67616d0000b2730092719c02baa44552c28d7e",
       "spotify": "https://open.spotify.com/album/3Hpacjh3VdYrYnSXZabzB8",
       "type": "single"
-    },
-    {
-      "id": "r-981476",
-      "title": "You're Not Who You Used to Be",
-      "artist": "Van Alden",
-      "year": 2019,
-      "art": "https://i.scdn.co/image/ab67616d0000b27397d87c1ada5e2a8fc23cccf0",
-      "spotify": "https://open.spotify.com/album/2bjB1EivO4B2BxSebH56X9",
-      "type": "EP",
-      "tracks": [
-        "Stay",
-        "Foolish"
-      ]
     },
     {
       "id": "r-673361",
@@ -766,15 +651,6 @@ window.DRAMAKAZE = {
       "type": "single"
     },
     {
-      "id": "r-441845",
-      "title": "O B V I O U S",
-      "artist": "Dane Christopher",
-      "year": 2018,
-      "art": "",
-      "spotify": "",
-      "type": "single"
-    },
-    {
       "id": "r-456740",
       "title": "Wasted (On Me)",
       "artist": "Hush",
@@ -790,24 +666,6 @@ window.DRAMAKAZE = {
       "year": 2018,
       "art": "https://i.scdn.co/image/ab67616d0000b273279b1bf8989cc61ccafee479",
       "spotify": "https://open.spotify.com/album/0VGK9EJoU1Mr89BZEYh7Wc",
-      "type": "single"
-    },
-    {
-      "id": "r-211487",
-      "title": "N O  T I M E",
-      "artist": "Dane Christopher",
-      "year": 2018,
-      "art": "",
-      "spotify": "",
-      "type": "single"
-    },
-    {
-      "id": "r-317755",
-      "title": "U N T I T L E D",
-      "artist": "Dane Christopher",
-      "year": 2018,
-      "art": "",
-      "spotify": "",
       "type": "single"
     },
     {
