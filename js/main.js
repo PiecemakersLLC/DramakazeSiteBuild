@@ -25,7 +25,7 @@
     { ch:"E", label:"Coming soon", href:"#", clipHit:"polygon(85% 23%, 94.5% 23%, 94.5% 72%, 85% 72%)", clip:"polygon(95.8% 23%, 95.8% 36.5%, 95.8% 38.5%, 95.8% 39.2%, 95.8% 42.5%, 95.8% 42.9%, 95.8% 50.6%, 95.8% 52.2%, 95.8% 64.7%, 95.8% 72%, 83.7% 72%, 83.7% 66.2%, 83.7% 65.3%, 83.7% 63%, 83.7% 62.5%, 78% 57%, 83.7% 56.9%, 83.7% 48.9%, 81.1% 38.7%, 83.7% 27.1%, 83.7% 23%)" },
     { ch:"●", label:"B-side", href:"#", clip:"circle(4.7% at 83.18% 68.92%)", egg:true }
   ];
-  var HILITE_SRC = "assets/logo/logotype-black.png";
+  var HILITE_SRC = "assets/logo/logotype-black.svg";
 
   var logoNav = document.getElementById("logoNav");
   var caption = document.getElementById("logoCaption");
